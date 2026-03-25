@@ -23,7 +23,7 @@ connectDB();
 app.use(cors({
   origin: process.env.CLIENT_URL
     ? process.env.CLIENT_URL.split(",").map(s => s.trim())
-    : ["http://localhost:5173", "http://localhost:4173"],
+    : ["https://farmconnect-woad.vercel.app", "http://localhost:4173"],
   credentials: true,
 }));
 app.use(express.json({ limit: "10mb" }));
