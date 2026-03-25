@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || "/api";
+const API_URL = "https://farmconnectdirect.onrender.com/api";
 
 const getToken = () => localStorage.getItem("farmconnect_token");
 
